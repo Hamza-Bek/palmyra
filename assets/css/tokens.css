@@ -1,0 +1,87 @@
+/* ==========================================================================
+   Palmyra: Design tokens
+   Single source of truth for colour, type, spacing, radius, shadow, motion.
+   Components must reference these variables, never raw values.
+   ========================================================================== */
+
+:root {
+  /* Colour: ivory canvas, deep navy ink, logo blues (deep blue + sky blue) */
+  --color-bg: #fbf8f2;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f4eee2;
+  --color-ink: #10263a;
+  --color-ink-soft: #485a6a;
+  --color-primary: #0b6fa0;
+  --color-primary-strong: #08557c;
+  --color-primary-soft: #dff1f9;
+  --color-border: #e7dfcf;
+  --color-on-primary: #ffffff;
+  --color-sky: #58c8ea;
+  --color-whatsapp: #128c4b;
+  --color-focus: #0b6fa0;
+
+  /* Typography: families switch per language (see base.css) */
+  --font-display-en: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --font-body-en: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-display-ar: "Cairo", Tahoma, sans-serif;
+  --font-body-ar: "Cairo", Tahoma, "Segoe UI", sans-serif;
+  --font-display: var(--font-display-en);
+  --font-body: var(--font-body-en);
+
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.1875rem;
+  --text-xl: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --text-2xl: clamp(1.75rem, 1.4rem + 1.6vw, 2.5rem);
+  --text-3xl: clamp(2.1rem, 1.5rem + 2.8vw, 3.4rem);
+  --text-hero: clamp(2.25rem, 1.5rem + 3.6vw, 4rem);
+
+  --leading-tight: 1.12;
+  --leading-snug: 1.3;
+  --leading-body: 1.7;
+
+  /* Spacing: 4px base, spacious rhythm */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-section: clamp(4.5rem, 3rem + 7vw, 8.5rem);
+
+  /* Layout */
+  --container-max: 75rem;
+  --container-gutter: clamp(1.25rem, 0.5rem + 3.5vw, 2.5rem);
+  --header-height: 4.75rem;
+
+  /* Radius */
+  --radius-sm: 0.625rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --radius-pill: 999px;
+  /* Arch: half-width circle on top. Vertical radius = 50% of width / aspect height */
+  --radius-arch-4x5: 50% 50% var(--radius-lg) var(--radius-lg) / 40% 40% var(--radius-lg) var(--radius-lg);
+  --radius-arch-9x11: 50% 50% var(--radius-lg) var(--radius-lg) / 41% 41% var(--radius-lg) var(--radius-lg);
+
+  /* Shadow: soft, navy-tinted */
+  --shadow-sm: 0 1px 2px rgb(16 38 58 / 0.06), 0 2px 8px rgb(16 38 58 / 0.04);
+  --shadow-md: 0 6px 24px rgb(16 38 58 / 0.08), 0 2px 6px rgb(16 38 58 / 0.04);
+  --shadow-lg: 0 24px 60px rgb(16 38 58 / 0.14), 0 6px 16px rgb(16 38 58 / 0.06);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 180ms;
+  --duration-base: 320ms;
+  --duration-slow: 800ms;
+
+  /* Layers */
+  --z-header: 100;
+  --z-progress: 110;
+  --z-float: 90;
+}
