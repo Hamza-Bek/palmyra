@@ -1,8 +1,7 @@
 /* English copy. Keys mirror the data-i18n attributes in index.html. */
 window.PALMYRA.i18n.en = {
-  "meta.title": "Palmyra | Travel & Tourism",
-  "meta.description":
-    "Palmyra helps you book flight tickets, hotel stays and complete travel packages, with friendly support in Arabic and English.",
+  "meta.title": "Palmyra Tourism Services | Flight Tickets, Hotels & Travel Packages",
+  "meta.description": "Palmyra Tourism Services: book flight tickets, hotel reservations and complete travel packages with one friendly team. Clear prices, support in Arabic and English.",
 
   "a11y.skip": "Skip to main content",
   "a11y.home": "Palmyra home",
@@ -16,12 +15,13 @@ window.PALMYRA.i18n.en = {
   "nav.process": "How it works",
   "nav.why": "Why Palmyra",
   "nav.contact": "Contact",
+  "nav.faq": "FAQ",
   "nav.cta": "Plan my trip",
 
   "cta.whatsapp": "Chat on WhatsApp",
   "cta.services": "See our services",
 
-  "hero.eyebrow": "Travel & Tourism",
+  "hero.eyebrow": "Tourism Services",
   "hero.titleA": "Your trip, arranged",
   "hero.titleB": "with care.",
   "hero.lead":
@@ -111,6 +111,41 @@ window.PALMYRA.i18n.en = {
   "why.v4.title": "Arabic and English",
   "why.v4.text": "We serve you comfortably in the language you prefer.",
 
+  "faq.eyebrow": "Questions & answers",
+  "faq.title": "Questions we hear most often.",
+  "faq.lead": "Short, clear answers about booking with Palmyra. If you don't find yours here, send us a message.",
+  "faq.q1": "What tourism services does Palmyra offer?",
+  "faq.a1": "We arrange flight tickets, hotel reservations and complete travel packages. We also help with medical travel coordination, nature and eco trips, diving and golf programmes, hotel management and marketing support, and hospitality training.",
+  "faq.q2": "How do I request a booking?",
+  "faq.a2": "Send us your destination, travel dates and number of travellers on WhatsApp, by phone or by email. You can also fill in the quick request form on this page. We reply with suitable options and their prices.",
+  "faq.q3": "Do I pay anything before I see the options?",
+  "faq.a3": "No. We first send you the options with their full prices and conditions. You decide, and only then do we complete the booking.",
+  "faq.q4": "Can you book international flights?",
+  "faq.a4": "Yes. We book domestic and international flights, one-way, return or multi-city, on the airlines that fit your dates and budget.",
+  "faq.q5": "Do you book hotels in Egypt and abroad?",
+  "faq.a5": "Yes. We reserve hotels, resorts and serviced apartments in Egypt and in other countries, chosen around the purpose of your trip.",
+  "faq.q6": "What is included in a travel package?",
+  "faq.a6": "A package usually brings together flights, accommodation and airport transfers, and it can include tours and activities. Every package is built around your dates, budget and interests.",
+  "faq.q7": "Can you plan trips for families, groups or honeymoons?",
+  "faq.a7": "Yes. We plan family holidays, honeymoons, group trips and company travel, and adjust the programme to the pace that suits you.",
+  "faq.q8": "Can companies book business travel with you?",
+  "faq.a8": "Yes. Companies can send us their travel needs for staff, meetings or events, and we arrange the flights and hotels in one place.",
+  "faq.q9": "Are there hidden fees?",
+  "faq.a9": "No. You see the full cost and the booking conditions before you confirm anything.",
+  "faq.q10": "Can I change or cancel a booking?",
+  "faq.a10": "Changes and cancellations depend on the rules of the airline or hotel. We explain these rules before you book and help you with any change you need afterwards.",
+  "faq.q11": "How do you help with medical travel?",
+  "faq.a11": "We help you arrange appointments with hospitals and treatment centres, together with the flights and accommodation around your treatment dates.",
+  "faq.q12": "Which languages do you speak?",
+  "faq.a12": "We serve you in Arabic and English, by message, phone or email.",
+  "faq.q13": "What information should I send to get a quote?",
+  "faq.a13": "Your destination, travel dates, number of adults and children, and your preferred budget or hotel level. When you confirm, we ask for the travellers' names exactly as written in their passports.",
+  "faq.q14": "Does this website store my personal data?",
+  "faq.a14": "No. The request form does not save anything. It simply opens WhatsApp or your email app with your message ready to send.",
+  "faq.moreTitle": "Still have a question?",
+  "faq.moreText": "Our team is happy to help you choose the right trip.",
+  "faq.moreCta": "Ask us on WhatsApp",
+
   "contact.eyebrow": "Contact us",
   "contact.title": "Let's plan your next trip.",
   "contact.lead": "Send us a message and we will come back to you with suitable options.",
@@ -141,8 +176,7 @@ window.PALMYRA.i18n.en = {
   "message.details": "Details",
   "message.subject": "Travel request",
 
-  "footer.about":
-    "Palmyra provides booking and travel-arrangement services: flight tickets, hotel stays and complete travel packages.",
+  "footer.about": "Palmyra Tourism Services: flight tickets, hotel reservations and complete travel packages, arranged by one friendly team.",
   "footer.links": "Explore",
   "footer.contact": "Get in touch",
   "footer.rights": "Palmyra. All rights reserved.",

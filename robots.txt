@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /tools/
+
+Sitemap: https://hamza-bek.github.io/palmyra/sitemap.xml

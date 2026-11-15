@@ -133,6 +133,49 @@
     });
   }
 
+  /* ---------- FAQ accordion ----------
+     Native <details> (works without JS and is indexed by search engines),
+     enhanced with a smooth height animation and one-open-at-a-time. */
+
+  function initFaq() {
+    var list = document.getElementById("faq-list");
+    if (!list) return;
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var items = list.querySelectorAll(".faq-item");
+
+    function animate(item, open) {
+      var answer = item.querySelector(".faq-item__answer");
+      if (reduceMotion || !answer.animate) {
+        item.open = open;
+        return;
+      }
+      if (open) item.open = true;
+      var full = answer.scrollHeight + "px";
+      var animation = answer.animate(
+        open
+          ? [{ height: "0px", opacity: 0 }, { height: full, opacity: 1 }]
+          : [{ height: full, opacity: 1 }, { height: "0px", opacity: 0 }],
+        { duration: open ? 320 : 240, easing: "cubic-bezier(0.22, 1, 0.36, 1)" }
+      );
+      animation.onfinish = function () {
+        if (!open) item.open = false;
+      };
+    }
+
+    items.forEach(function (item) {
+      item.querySelector("summary").addEventListener("click", function (event) {
+        event.preventDefault();
+        var willOpen = !item.open;
+        if (willOpen) {
+          items.forEach(function (other) {
+            if (other !== item && other.open) animate(other, false);
+          });
+        }
+        animate(item, willOpen);
+      });
+    });
+  }
+
   /* ---------- Footer year ---------- */
 
   function setYear() {
@@ -144,6 +187,7 @@
   initMobileNav();
   initServiceLinks();
   initInquiryForm();
+  initFaq();
   refreshWhatsappLinks();
   setYear();
 

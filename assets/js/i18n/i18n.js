@@ -43,6 +43,27 @@
     });
   }
 
+  /** Keep canonical URL, social locale and the address bar in step with the language. */
+  function syncSeo(lang) {
+    var langUrl = config.siteUrl + (lang === "ar" ? "?lang=ar" : "");
+    var canonical = document.querySelector("link[data-canonical]");
+    if (canonical) canonical.href = langUrl;
+
+    var locale = document.querySelector('meta[property="og:locale"]');
+    var altLocale = document.querySelector('meta[property="og:locale:alternate"]');
+    if (locale) locale.content = lang === "ar" ? "ar_EG" : "en_US";
+    if (altLocale) altLocale.content = lang === "ar" ? "en_US" : "ar_EG";
+
+    try {
+      var url = new URL(window.location.href);
+      if (lang === "ar") url.searchParams.set("lang", "ar");
+      else url.searchParams.delete("lang");
+      window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+    } catch (e) {
+      /* very old browsers: the address bar simply stays as it is */
+    }
+  }
+
   function setLang(lang, options) {
     if (!isSupported(lang)) return;
     root.lang = lang;
@@ -53,6 +74,7 @@
       /* storage unavailable: language simply won't persist */
     }
     render();
+    syncSeo(lang);
     if (!options || !options.silent) {
       document.dispatchEvent(new CustomEvent("palmyra:langchange", { detail: { lang: lang } }));
     }

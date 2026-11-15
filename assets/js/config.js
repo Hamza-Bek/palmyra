@@ -5,6 +5,7 @@
 
 window.PALMYRA = {
   config: {
+    siteUrl: "https://hamza-bek.github.io/palmyra/", // public address, used for SEO links
     phoneDisplay: "+20 10 26945745",
     phoneE164: "+201026945745",
     whatsappNumber: "201026945745", // digits only, with country code
