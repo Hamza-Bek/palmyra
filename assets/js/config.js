@@ -9,7 +9,7 @@ window.PALMYRA = {
     phoneDisplay: "+20 10 26945745",
     phoneE164: "+201026945745",
     whatsappNumber: "201026945745", // digits only, with country code
-    email: "samibek1@gmail.com",
+    email: "palmyra.tkt@gmail.com",
     defaultLang: "en",
     supportedLangs: ["en", "ar"],
     storageKey: "palmyra-lang",
